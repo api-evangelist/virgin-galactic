@@ -1,8 +1,25 @@
 aid: virgin-galactic
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/virgin-galactic.png
 name: Virgin Galactic
-description: 'Virgin Galactic is a company surfaced as a portfolio company of social-capital and added
-  to the API Evangelist network as a stub for enrichment. Sector: space. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Virgin Galactic is a publicly traded (NYSE: SPCE) commercial spaceflight company
+  founded by Richard Branson that develops and operates suborbital, crewed spaceplanes for
+  space tourism and research payloads. It flies its air-launched SpaceShipTwo-class and next
+  generation Delta-class vehicles from Spaceport America in New Mexico, carrying private
+  astronauts and scientific experiments to the edge of space. The company was surfaced as a
+  portfolio company of Social Capital and added to the API Evangelist network. Enrichment
+  found no public developer API, portal, or documentation surface: it is a consumer-facing
+  space-tourism business, not an API provider.'
 url: https://raw.githubusercontent.com/api-evangelist/virgin-galactic/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Space
+- Spaceflight
+- Space Tourism
+- Aerospace
+- Aviation
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/virgin-galactic-domain-security.yml
 - type: Website
   url: https://www.virgingalactic.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
